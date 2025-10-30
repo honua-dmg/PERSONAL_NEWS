@@ -8,6 +8,7 @@ from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lsa import LsaSummarizer
 import logging
+import Summariser
 logging.basicConfig(
     level=logging.ERROR,  # Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -17,7 +18,8 @@ logging.basicConfig(
 pd.set_option('display.max_colwidth', None)
 
 class Crawler:
-    def __init__(self):
+    def __init__(self, summariser: Summariser):
+        self.summariser = summariser
         pass
 
     def push_to_queue(self, **kwargs):
@@ -89,9 +91,9 @@ class GdeltsCrawler(Crawler):
             logging.error("Error-text-extraction: ", url)
             return None
     
-        
+
     def summarize_text(self,  text):
-        return Summariser().summarize(text)
+        return self.summariser.summarize(text)
 
     def push_to_queue(self, **kwargs):
         pass
