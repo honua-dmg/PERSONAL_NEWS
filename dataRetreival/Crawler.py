@@ -89,15 +89,9 @@ class GdeltsCrawler(Crawler):
             logging.error("Error-text-extraction: ", url)
             return None
     
-    def summarize_text(self, text):
-        try:
-            parser = PlaintextParser.from_string(text, Tokenizer("english"))
-            summarizer = LsaSummarizer()
-            summary = summarizer(parser.document, sentences_count)
-            return " ".join([str(sentence) for sentence in summary])
-        except:
-            logging.error("Error-summarization: ", text)
-            return None
+        
+    def summarize_text(self,  text):
+        return Summariser().summarize(text)
 
     def push_to_queue(self, **kwargs):
         pass
