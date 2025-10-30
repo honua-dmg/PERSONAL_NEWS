@@ -8,6 +8,12 @@ from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lsa import LsaSummarizer
 import logging
+logging.basicConfig(
+    level=logging.ERROR,  # Set the logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    filename='crawler_errors.log',  # Log file name
+    filemode='a'  # Append mode, so logs aren't overwritten
+)
 pd.set_option('display.max_colwidth', None)
 
 class Crawler:
@@ -33,6 +39,7 @@ class Crawler:
 class GdeltsCrawler(Crawler):
     def __init__(self):
         super().__init__()
+        self.article_hash = {}
 
     def retrieve(self, **kwargs):
         """
@@ -66,15 +73,20 @@ class GdeltsCrawler(Crawler):
             data =  pd.DataFrame(response.json()['articles'])
             return data[data['language']=="English"]
         else:
-            print("Error: ", response.status_code)
+            logging.error("Error-retrieval: ",kwargs['query'] )
+
             return None
         
     def extract_text(self, url):
+        if url in self.article_hash:
+            return self.article_hash[url]
+
         downloaded = trafilatura.fetch_url(url)
         try:
-            return trafilatura.extract(downloaded, include_comments=False, include_tables=True)
+            self.article_hash[url] = trafilatura.extract(downloaded, include_comments=False, include_tables=True)
+            return self.article_hash[url] # avoids re-downloading the same article
         except:
-            logging.error("Error extracting text | " + url)
+            logging.error("Error-text-extraction: ", url)
             return None
     
     def summarize_text(self, text):
@@ -84,7 +96,7 @@ class GdeltsCrawler(Crawler):
             summary = summarizer(parser.document, sentences_count)
             return " ".join([str(sentence) for sentence in summary])
         except:
-            logging.error("Error summarizing text | " + text)
+            logging.error("Error-summarization: ", text)
             return None
 
     def push_to_queue(self, **kwargs):
