@@ -39,8 +39,8 @@ class Crawler:
 
 
 class GdeltsCrawler(Crawler):
-    def __init__(self):
-        super().__init__()
+    def __init__(self,summariser):
+        super().__init__(summariser)
         self.article_hash = {}
 
     def retrieve(self, **kwargs):
@@ -100,3 +100,22 @@ class GdeltsCrawler(Crawler):
 
     
         
+
+if __name__ == "__main__":
+    from Summariser import SumySummariser
+    summariser = SumySummariser()
+    crawler = GdeltsCrawler(summariser)
+    print("Crawler initialized")
+    result = crawler.retrieve(query="climate change")
+    print(result)
+    print("First article text:")
+    if not result.empty:
+        first_url = result.iloc[0]['url']
+        text = crawler.extract_text(first_url)
+        print(text[:500] + "..." if text and len(text) > 500 else text)
+
+        print("\n" + "-"*30 + "\n")
+        summary = crawler.summarize_text(text)
+        print("\nSummary:")
+        print(summary)
+        print("\n" + "="*50 + "\n")
