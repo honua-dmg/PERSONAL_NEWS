@@ -11,26 +11,14 @@
             "id": "fa0c80f1d76ae603",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "High Level Description.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
-            }
-          }
-        ]
-      },
-      {
-        "id": "9088dd217110ae0e",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d1ea55dafa9b9cbd",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "High Level Description"
             }
           }
         ]
@@ -106,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "High Level Description.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for High Level Description"
             }
           },
           {
@@ -124,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "High Level Description.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from High Level Description"
             }
           },
           {
@@ -166,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "High Level Description.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of High Level Description"
             }
           }
         ]
@@ -193,8 +183,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "9321e89a5a42a5ca",
+  "active": "fa0c80f1d76ae603",
   "lastOpenFiles": [
+    "Semantic Analysis/resrch.md",
+    "High Level Description.md",
+    "Semantic Analysis/ROADMAP.md",
+    "Data retrieval",
+    "UI",
+    "Semantic Analysis",
     "Welcome.md"
   ]
 }
