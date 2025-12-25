@@ -1,7 +1,7 @@
 The goal:
 create a news summarizer that gives 2 views for a topics: for and against. 
 
-People have complex stances on various topics events and people that cannot be simply represented as left wing or right wing. For ideal accumulation of news, we believe that news should presented in a radically new format:
+People have complex stances on various topics events and people that cannot be simply represented as left wing or right wing. For the ideal intake of news, we believe that news should presented in a radically new format:
 	```
 	show people what was written in favour of their unique perspective,
 	show people what was written againt their unique perspective.
