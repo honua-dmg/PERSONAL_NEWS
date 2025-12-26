@@ -111,4 +111,79 @@
 	
 2. narrative drift over time
 
+
+
+### Source Bias Fingerprint:
+
+We could 
+#Event normalization
+
+For a given event E (e.g., _Messi visited India_), you have multiple articles {A1,A2,...,An} from different sources.
+
+- Each article is represented as a **feature vector** capturing:
+    
+    - Framing type (moral, economic, legal, etc.)
+        
+    - Agency/blame patterns
+        
+    - Entity sentiment
+        
+    - Certainty / hedging
+        
+    - Subjectivity
+        
+
+Then compute the event centroid (average of all articles)
+
+This centroid is basically the **average “baseline” coverage of the event**, stripped of source-specific quirks.
+
+Next you compute deviations per article. For each article Ai​:
+
+
+- Positive/negative deviations indicate **how the article differs from the “consensus framing”**.
+    
+- Examples:
+    
+    - Stronger moral framing than average → overemphasizing ethics
+        
+    - Blaming actor X when centroid is neutral → scapegoating
+        
+    - Higher certainty than average → more assertive/persuasive tone
+        
+
+These deltas are the **signal of bias**.
+
+Then over time we take the exponential moving average. if its stable over time then it likely has a stable bias fingerprint.
+
+### Narrative Drift and Temporal progression:
+
+We can use our calculations from SBF to deal with this. if in general there is a more volatile bias over time, it would imply more temporal progression. Alternatively we could calculate euclidian distances of each article within source from its previous one and check temporal progression there.
+
+## Rumour detection:
+
+Find larger distanced beyond a certain threshold from centroid (as calculated in sbf). we can flag those articles. This will flag them, but to verify for sure we could either use an llm/ compare with reliable data  depending on the actual event (?)
+
+
+
+
+Factuality/ evidence scoring:
+
+LLMs for claim extraction... adn verify said claims. Perhaps check average deviation from centroid... if low then likely factual, if not then it has been flagged and we could take that into account
+
+
+
+Casual inference extraction:
+
+
+
+
+Agenda Setting intensity:
+
+This measures how much an article pushes a source of information.
+We could measure this by checking huge bursts of deviations from centroids (as described earlier) to detect temporary agenda pushes. we could also detect time series data and see if there is any trend to indicate repeted pushing of a particular agenda.
+
+
+
+
+
    
