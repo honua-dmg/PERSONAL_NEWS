@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "acc32e7fed9c670c",
+        "id": "e037c23699b70251",
         "type": "tabs",
         "children": [
           {
-            "id": "fa0c80f1d76ae603",
+            "id": "63fa4ce8dd422c63",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "High Level Description.md",
+                "file": "Semantic Analysis/Aspect Sentiment/1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "High Level Description"
+              "title": "1"
             }
           }
         ]
@@ -183,10 +183,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "fa0c80f1d76ae603",
+  "active": "63fa4ce8dd422c63",
   "lastOpenFiles": [
+    "Semantic Analysis/Aspect Sentiment/1.pdf.sb-7f36265c-ZgA7D6",
+    "Semantic Analysis/Aspect Sentiment/1.pdf",
+    "Semantic Analysis/Aspect Sentiment/1.md",
+    "Semantic Analysis/Aspect Sentiment/0. FORMAT.md",
+    "UI/Untitled.canvas",
+    "Semantic Analysis/Aspect Sentiment",
+    "Semantic Analysis/Aspect Sentiment/Aspect Sentiment.md",
     "Semantic Analysis/resrch.md",
     "High Level Description.md",
+    "UI/Brain storming.md",
     "Semantic Analysis/ROADMAP.md",
     "Data retrieval",
     "UI",
