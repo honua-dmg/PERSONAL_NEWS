@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Semantic Analysis/Aspect Sentiment/1.md",
+                "file": "Semantic Analysis/Aspect Sentiment/Approach.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1"
+              "title": "Approach"
             }
           }
         ]
@@ -74,11 +74,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "47791071587f064a",
@@ -185,17 +187,20 @@
   },
   "active": "63fa4ce8dd422c63",
   "lastOpenFiles": [
-    "Semantic Analysis/Aspect Sentiment/1.pdf.sb-7f36265c-ZgA7D6",
-    "Semantic Analysis/Aspect Sentiment/1.pdf",
-    "Semantic Analysis/Aspect Sentiment/1.md",
-    "Semantic Analysis/Aspect Sentiment/0. FORMAT.md",
-    "UI/Untitled.canvas",
-    "Semantic Analysis/Aspect Sentiment",
-    "Semantic Analysis/Aspect Sentiment/Aspect Sentiment.md",
     "Semantic Analysis/resrch.md",
-    "High Level Description.md",
-    "UI/Brain storming.md",
+    "Semantic Analysis/Aspect Sentiment/Aspect Sentiment.md",
+    "Semantic Analysis/Aspect Sentiment/Approach.md",
     "Semantic Analysis/ROADMAP.md",
+    "UI/Untitled.canvas",
+    "UI/Brain storming.md",
+    "High Level Description.md",
+    "Semantic Analysis/Aspect Sentiment/2.md",
+    "Semantic Analysis/Aspect Sentiment/0. FORMAT.md",
+    "Semantic Analysis/Aspect Sentiment/1.pdf",
+    "Semantic Analysis/Aspect Sentiment/2.pdf",
+    "Semantic Analysis/Aspect Sentiment/1.md",
+    "Semantic Analysis/Aspect Sentiment/1.pdf.sb-7f36265c-ZgA7D6",
+    "Semantic Analysis/Aspect Sentiment",
     "Data retrieval",
     "UI",
     "Semantic Analysis",

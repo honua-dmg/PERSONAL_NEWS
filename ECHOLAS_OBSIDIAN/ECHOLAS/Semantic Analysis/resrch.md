@@ -17,7 +17,7 @@
 	hard to detect passive agressiveness tho
 	note:
 		different sources have different emotional baselines
-		
+
 ## Aspect sentiment
 1. targeted sentiment(2, filtering+Mapping)
 	what emotion is being expressed towards who?
