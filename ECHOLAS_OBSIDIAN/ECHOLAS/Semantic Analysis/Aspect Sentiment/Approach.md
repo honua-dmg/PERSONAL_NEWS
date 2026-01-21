@@ -2,13 +2,9 @@
 the way I understand it now. 
 if we can figure out which entity is being spoken about in which sentence/ sub sentence, we can effectively run a SetFit (sentence transformer fine tuning)
 
-
 There's also natural language entailment (NLI- something that could be worth looking into)
 
-
 siamese networks (contrastive learning)
-
-
 
 
 # NER +SetFit 
@@ -49,3 +45,10 @@ few shot training + CoT on a model like lamma 3 8B model.
 
 ### Manifold learning
 - unsupervised, take the embeddings, normalize and scale them down to lower dimensions, and run the consensus as a Gaussian Distribution.
+
+
+
+
+## Stance detection. 
+
+SETFIT + NLI inferencing. 
