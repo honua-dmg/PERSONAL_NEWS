@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Semantic Analysis/Stance/V1.md",
+                "file": "Semantic Analysis/Stance/SetFit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "V1"
+              "title": "SetFit"
+            }
+          },
+          {
+            "id": "c44de0f7b639e262",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Semantic Analysis/Stance/SetFit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SetFit"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,14 +198,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "63fa4ce8dd422c63",
+  "active": "c44de0f7b639e262",
   "lastOpenFiles": [
-    "Semantic Analysis/resrch.md",
     "Semantic Analysis/ROADMAP.md",
+    "Semantic Analysis/resrch.md",
+    "Semantic Analysis/Stance/V1.md",
+    "Semantic Analysis/Stance/SetFit.md",
     "UI/Brain storming.md",
     "UI/Untitled.canvas",
     "High Level Description.md",
-    "Semantic Analysis/Stance/V1.md",
     "Semantic Analysis/Aspect Sentiment/0. FORMAT.md",
     "Semantic Analysis/Aspect Sentiment/V1.md",
     "Semantic Analysis/Stance",
