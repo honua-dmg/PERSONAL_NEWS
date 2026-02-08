@@ -1,0 +1,5 @@
+- why do we weighing dislikes less than likes?
+- is the number of articles reset after each session?
+- why do we want to reduce the impact an interaction has over time?
+	- user beliefs are prone to change, This is something we want to model, so what do we gain from giving less importance to future interactions?
+- can we see if we can get a working example with fake data- jus to be able to visualize this better
